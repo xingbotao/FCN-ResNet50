@@ -1,0 +1,36 @@
+train_net: "train.prototxt"
+test_net: "val.prototxt"
+test_iter: 100
+test_interval: 200
+average_loss: 20
+test_initialization: false
+
+base_lr: 1e-15
+
+#gamma: 0.5
+#stepsize: 75000
+#lr_policy: "step"
+
+#gamma: 0.0001
+#power: 0.75
+#lr_policy: "inv"
+
+lr_policy: "fixed"
+
+momentum: 0.99	
+weight_decay: 0.0005
+
+type: "Adam"
+#type: "SGD"
+
+iter_size: 1
+display: 1
+max_iter: 200000
+snapshot: 10000
+
+#snapshot_prefix: "/home/ying/Public/caffe/examples/zhj/ResNetFC/snapshot/skip/train"
+snapshot_prefix: "/home/zhaohj/Documents/Code/FCN-ResNet50/snapshot/train"
+
+solver_mode: GPU
+
+
